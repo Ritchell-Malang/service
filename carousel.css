@@ -1,0 +1,35 @@
+.carousel {
+
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Buttons (dots style) */
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+  background: gray;
+  cursor: pointer;
+}
+
+.buttons button.active-btn {
+  background: black;
+}
