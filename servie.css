@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    padding: 0 20px;
+}
+
+.service_page {
+    padding: 70px 50px 30px;
+}
+
+
+.first-content {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.first_video {
+    width: 95%;
+}
+
+.vid1 {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 22px;
+    display: block;
+}
+
+
+.second-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #2E458A;
+    font-family: Figtree;
+}
+
+.medical {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
+.service {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.second-content ul {
+    padding-left: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+
+.third-content {
+    display: grid;
+    grid-template-columns: 3fr 2fr .2fr;
+    position: relative;
+    z-index: 2;
+    gap: 20px;
+    padding: 50px 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+    font-family: Figtree;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.support,
+.support2 {
+    font-size: 40px;
+}
+
+.lined {
+    width: 20%;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.expertise {
+    font-size: 20px;
+    margin: 20px 0 45px;
+}
+
+
+.second-video {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.vid2 {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+
+.support_page {
+    position: relative;
+    min-height: 617px;
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 49px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.slide.active {
+    display: block;
+}
+
+button {
+    padding: 20px 60px;
+    border-radius: 100px;
+    border: none;
+    background-color: #AFBEE9;
+    font: 700 20px Figtree;
+    cursor: pointer;
+}
+
+
+.dotbtn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 115px 0 0 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.dot.active-dot {
+    background: #fff;
+}
+
+
+.last-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.business-logo {
+    width: 40%;
+    height: 40%;
+}
+
+.last-line {
+    width: 100%;
+    border: 2px solid #2E458A;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr 1.1fr 1fr;
+    font-family: Figtree;
+    padding: 50px 0;
+}
+
+.contacts ul {
+    list-style: none;
+    color: #1E1E1E;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 45px;
+    padding: 20px 0;
+}
+
+.contact-title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2E458A;
+}
+
+.company {
+    font: 400 20px Figtree;
+    text-align: center;
+    color: #2E458A;
+    padding: 20px 0;
+}
+
+.company span {
+    font: 700 italic 20px Figtree;
+    text-align: center;
+    text-decoration: underline;
+    color: #D9644A;
+}
+
+
+@media (max-width: 1024px) {
+    .third-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 40px 24px;
+    }
+    
+    .dotbtn {
+        flex-direction: row;
+        justify-content: center;
+        margin: 24px 0 0;
+        flex-wrap: wrap;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .vid2 { 
+        height: 360px; 
+    }
+
+    .contacts {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px 20px;
+    }
+
+    .contacts ul { 
+        font-size: 16px; 
+        line-height: 40px; 
+    }
+    .contact-title, .company, .company span { 
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .service_page { padding: 40px 20px; }
+
+    .first-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .third-content { 
+        padding: 30px 18px; 
+    }
+
+    .support { 
+        font-size: 32px; 
+    }
+    .expertise { 
+        font-size: 18px; 
+    }
+
+    .vid2 { 
+        height: 280px; 
+    }
+
+    .buttons { 
+        gap: 16px; 
+    }
+
+    button {
+        padding: 16px 28px;
+        font-size: 18px;
+    }
+
+    .dotbtn { 
+        gap: 16px; 
+    }
+
+    .contacts {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 15px;
+    }
+
+    .background{
+        border-radius: 20px;
+    }
+    .contacts ul { 
+        font-size: 14px; 
+        line-height: 35px; 
+    }
+    .contact-title, .company, .company span { 
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 560px) {
+    .third-content { 
+        padding: 22px 12px; }
+
+    .content {
+        padding: 16px;
+        margin-top: 16px;
+    }
+
+    .support { 
+        font-size: 28px; 
+    }
+    .expertise { 
+        font-size: 16px; 
+    }
+
+    .vid2 { 
+        height: 220px; 
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+    
+    button { 
+        width: 100%; 
+    }
+
+    .dotbtn {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin: 16px 0 0;
+    }
+
+    .background {
+         border-radius: 20px; 
+        }
+
+    .contacts {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 10px;
+    }
+
+    .contacts ul { 
+        font-size: 12px; 
+        line-height: 30px; 
+    }
+    .contact-title, .company, .company span {
+        font-size: 14px; 
+    }
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
